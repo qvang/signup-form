@@ -1,5 +1,54 @@
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url(fonts/OpenSans-Regular.woff2);
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url(fonts/OpenSans-Italic.woff2);
+
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monserrat Bold";
+  src: url(fonts/Montserrat-Bold.woff2);
+
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {}
+
+
+
 img {
   display: flex;
   height: 500px;
   width: 500px;
+}
+
+html {
+  background-color: grey;
+}
+
+form {
+  background-color: white;
+  font-family: "Monserrat Bold", "Open Sans Regular", sans-serif;
+}
+
+p,
+h2 {
+  font-family: "Open Sans Regular", sans-serif;
+}
+
+span {
+  font-family: "Open Sans Italic", sans-serif;
 }
