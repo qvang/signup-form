@@ -1,11 +1,12 @@
 # odin-signup-form
 
-To-Do list:
+Most optimal on 1440p display.
 
-Header text:
+Won't look good on mobile.
 
-- Position it properly.
-- Box the text properly.
-- Align bottom of odin border to forms border.
+No password validation, only HTML and CSS.
+
+
+
 
 

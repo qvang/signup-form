@@ -36,7 +36,7 @@
 
 :root {
   --white-background: #f9fafb;
-  --form-text-color: #5b636d;
+  --form-text-color: #32373f;
   --button-color: #596d48;
 }
 
@@ -49,6 +49,7 @@
 body,
 html {
   height: 100%;
+  overflow: hidden;
 }
 
 html {
@@ -67,12 +68,17 @@ html {
 }
 
 .image-caption {
-  position: absolute;
   font-family: "Open Sans Regular", sans-serif;
-  bottom: 20px;
-  left: 270px;
   font-size: 1rem;
   color: white;
+
+  gap: 6px;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .logo {
@@ -123,6 +129,8 @@ html {
   font-family: "Open Sans Regular", sans-serif;
   padding-top: 25px;
   padding-bottom: 35px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
 }
 
 h2 {
@@ -135,7 +143,7 @@ h2 {
 }
 
 p {
-  margin-top: 25px;
+  margin-top: 30px;
   margin-left: 50px;
   font-size: 1.25em;
 }
@@ -153,7 +161,7 @@ span {
 }
 
 .form-header {
-  color: #505862;
+  color: #24282d;
   font-size: 2em;
   margin-left: 50px;
   margin-bottom: 25px;
@@ -167,7 +175,7 @@ span {
   margin-left: 50px;
   display: flex;
   flex-direction: column;
-  font-size: 1em;
+  font-size: 0.8em;
   letter-spacing: 1.5px;
 }
 
@@ -179,6 +187,14 @@ span {
 input {
   width: 250px;
   height: 30px;
+  padding: 10px;
+}
+
+.left-input,
+.right-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .extra-bold {
@@ -188,5 +204,35 @@ input {
 
 .button {
   margin-left: 50px;
-  margin-top: 100px;
+  margin-top: 50px;
+}
+
+button {
+  background-color: var(--button-color);
+  font-family: "Open Sans Regular", sans-serif;
+  font-weight: 1000;
+  font-size: 1rem;
+  color: white;
+  padding: 13px 50px 13px 50px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+}
+
+#pwd:invalid {
+  border-color: red;
+}
+
+#pwd:focus {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+input:focus {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
