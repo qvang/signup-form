@@ -1,4 +1,4 @@
-# odin-signup-form
+# signup-form
 
 Most optimal on 1440p display.
 
